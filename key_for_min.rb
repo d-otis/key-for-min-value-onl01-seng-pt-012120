@@ -12,13 +12,14 @@ def key_for_min_value(name_hash)
     min_value = nil
     min_key = ""
     name_hash.collect do |key, value|
-      binding.pry
+      # binding.pry
       if !min_value
         min_value = value
         min_key = key
       elsif value < min_value
         min_value = value
         min_key = key
+        binding.pry
       end
     end
     min_key
