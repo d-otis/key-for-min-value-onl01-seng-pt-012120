@@ -3,11 +3,13 @@
 
 def key_for_min_value(name_hash)
   min_value_key = nil
+  min_value = 0
   if name_hash.empty?
     nil
   else
     name_hash.each do |key, value|
-      puts "key is #{key} and value is #{value}"
+      # puts "key is #{key} and value is #{value}"
+      if value < min_value
     end
   end
 end
