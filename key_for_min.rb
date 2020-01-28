@@ -11,7 +11,7 @@ def key_for_min_value(name_hash)
     if !min_value
       min_value = value
     else
-      
+      name_hash.collect do |key, value|
     end
   end
 end
